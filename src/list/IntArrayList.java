@@ -20,7 +20,7 @@ public class IntArrayList implements IntList {
 
     private void check(){
         if (size >= data.length){
-            this.data = Arrays.copyOf(this.data, size + 6);
+            this.data = Arrays.copyOf(this.data, (int)(size * 1.5));
         }
     }
 
